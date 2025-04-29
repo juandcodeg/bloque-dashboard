@@ -8,7 +8,7 @@ export default defineConfig({
     preact(), tailwindcss(),
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['fish icon.png'],
+      includeAssets: ['fish-icon.webp'],
       manifest: {
         name: 'Bloque Dashboard',
         short_name: 'Bloque',
@@ -18,12 +18,12 @@ export default defineConfig({
         theme_color: '#38bdf8', // tailwind sky-400
         icons: [
           {
-            src: 'fish icon.png',
+            src: 'fish-icon-192.webp',
             sizes: '192x192',
             type: 'image/png',
           },
           {
-            src: 'fish icon.png',
+            src: 'fish-icon.webp',
             sizes: '512x512',
             type: 'image/png',
           },
