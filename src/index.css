@@ -1,0 +1,31 @@
+/* src/index.css */
+@import "tailwindcss";
+
+/* Define custom theme variables */
+@theme {
+  --color-background: #0f0f0f; /* Dark background */
+  --color-surface: #1c1c1e; /* Surface color for cards and containers */
+  --color-accent: #6366f1; /* Accent color (indigo-500) */
+  --color-text: #f9fafb; /* Light text color */
+  --font-display: system-ui, sans-serif;
+}
+
+/* Apply global styles using the custom variables */
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-display);
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* Example of using the accent color */
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
